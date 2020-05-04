@@ -1,0 +1,23 @@
+{
+    "name": "nodejs-mocha",
+    "version": "1.0.0",
+    "description": "NodeJS Unit Test with Mocha and Chai",
+    "main": "index.js",
+    "scripts": {
+        "test": "cross-env NODE_ENV=development mocha './lib/**/*.test.js'"
+    },
+    "author": "Anas Zakaria",
+    "license": "ISC",
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "chai-as-promised": "^7.1.1",
+        "cross-env": "^7.0.2",
+        "rewire": "^5.0.0",
+        "sinon": "^9.0.2",
+        "sinon-chai": "^3.5.0"
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "mongoose": "^5.9.11"
+    }
+}
