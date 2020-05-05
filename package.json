@@ -4,7 +4,8 @@
     "description": "NodeJS Unit Test with Mocha and Chai",
     "main": "index.js",
     "scripts": {
-        "test": "cross-env NODE_ENV=development mocha './lib/**/*.test.js'"
+        "test": "cross-env NODE_ENV=development mocha './lib/**/*.test.js'",
+        "test-mailer": "cross-env NODE_ENV=development mocha './lib/mailer.test.js'"
     },
     "author": "Anas Zakaria",
     "license": "ISC",
