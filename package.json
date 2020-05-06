@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "test": "cross-env NODE_ENV=development mocha './lib/**/*.test.js'",
-        "test-utils": "cross-env NODE_ENV=development mocha './lib/utils.test.js'"
+        "test-route": "cross-env NODE_ENV=development mocha './lib/app.test.js --exit'"
     },
     "author": "Anas Zakaria",
     "license": "ISC",
@@ -15,7 +15,8 @@
         "cross-env": "^7.0.2",
         "rewire": "^5.0.0",
         "sinon": "^9.0.2",
-        "sinon-chai": "^3.5.0"
+        "sinon-chai": "^3.5.0",
+        "supertest": "^4.0.2"
     },
     "dependencies": {
         "express": "^4.17.1",
