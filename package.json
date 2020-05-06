@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "test": "cross-env NODE_ENV=development mocha './lib/**/*.test.js'",
-        "test-route": "cross-env NODE_ENV=development mocha './lib/app.test.js --exit'"
+        "test-route": "cross-env NODE_ENV=development mocha './lib/app.test.js --exit'",
+        "test-model": "cross-env NODE_ENV=development mocha './lib/models/user.test.js'"
     },
     "author": "Anas Zakaria",
     "license": "ISC",
