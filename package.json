@@ -6,7 +6,8 @@
     "scripts": {
         "test": "cross-env NODE_ENV=development mocha './lib/**/*.test.js'",
         "test-route": "cross-env NODE_ENV=development mocha './lib/app.test.js --exit'",
-        "test-order": "cross-env NODE_ENV=development mocha './lib/order.test.js'"
+        "test-order": "cross-env NODE_ENV=development mocha './lib/order.test.js'",
+        "coverage": "cross-env NODE_ENV=development nyc --reporter=text npm test"
     },
     "author": "Anas Zakaria",
     "license": "ISC",
