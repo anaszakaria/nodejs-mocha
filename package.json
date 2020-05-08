@@ -4,7 +4,7 @@
     "description": "NodeJS Unit Test with Mocha and Chai",
     "main": "index.js",
     "scripts": {
-        "test": "cross-env NODE_ENV=development mocha './lib/**/*.test.js'",
+        "test": "cross-env NODE_ENV=development mocha \"./{,!(node_modules)/**/}*.test.js\" --exit",
         "test-route": "cross-env NODE_ENV=development mocha './lib/app.test.js --exit'",
         "coverage": "cross-env NODE_ENV=development nyc --reporter=text npm test"
     },
